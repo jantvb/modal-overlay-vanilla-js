@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Modal Overlay</title>
+  </head>
+  <body>
+    <!-- Show offer-->
+    <div id="show-offer" class="center-container">
+      <button type="button" onclick="showModal()">Show offer</button>
+    </div>
+    
+    <!-- Accept offer modal-->
+    <div id="accept-offer-modal" class="modal-overlay hide" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button type="button" class="close-modal-btn" onclick="closeModal()">X</button>
+        <p>Click the button below to accept our amazing offer!</p>
+        <button onclick="offerAcceptedMsg()" type="button">Accept offer</button>
+      </div>
+    </div>
+    
+    <!-- Offer accepted-->
+    <div id="offer-accepted" class="center-container hide">
+      <p>Offer accepted</p>
+    </div>
+  </body>
+</html>
